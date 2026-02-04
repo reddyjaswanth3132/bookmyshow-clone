@@ -1,0 +1,302 @@
+.movie-detail-page {
+    padding-bottom: var(--spacing-xxl);
+}
+
+/* Hero Section */
+.movie-hero {
+    background-size: cover;
+    background-position: center;
+    padding: var(--spacing-xxl) 0;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.movie-hero-content {
+    display: flex;
+    gap: var(--spacing-xl);
+    align-items: flex-start;
+}
+
+.movie-poster-large {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.movie-poster-large img {
+    width: 280px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.in-cinemas {
+    position: absolute;
+    bottom: var(--spacing-md);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+    white-space: nowrap;
+}
+
+.movie-info-large {
+    color: white;
+    padding-top: var(--spacing-lg);
+}
+
+.movie-info-large h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+}
+
+.movie-rating-large {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.rating-star {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-sm);
+}
+
+.rating-star svg {
+    width: 20px;
+    height: 20px;
+    color: #f84464;
+}
+
+.rating-value {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+}
+
+.rating-votes {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: var(--font-size-sm);
+}
+
+.rate-btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-sm);
+    transition: all var(--transition-fast);
+}
+
+.rate-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.movie-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-base);
+}
+
+.meta-divider {
+    opacity: 0.5;
+}
+
+.movie-details {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xl);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: var(--font-size-sm);
+}
+
+.detail-divider {
+    opacity: 0.3;
+}
+
+.book-tickets-btn {
+    padding: var(--spacing-md) var(--spacing-xxl);
+    font-size: var(--font-size-lg);
+}
+
+/* Content Sections */
+.movie-section {
+    padding: var(--spacing-xl) 0;
+    border-bottom: 1px solid #eee;
+}
+
+.movie-section:last-child {
+    border-bottom: none;
+}
+
+.movie-section h2 {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+    color: var(--text-primary);
+}
+
+.movie-synopsis {
+    font-size: var(--font-size-md);
+    line-height: 1.7;
+    color: var(--text-secondary);
+    max-width: 800px;
+}
+
+/* Cast Grid */
+.cast-grid {
+    display: flex;
+    gap: var(--spacing-lg);
+    overflow-x: auto;
+    padding-bottom: var(--spacing-sm);
+}
+
+.cast-card {
+    text-align: center;
+    flex-shrink: 0;
+    width: 120px;
+}
+
+.cast-image {
+    width: 100px;
+    height: 100px;
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    margin: 0 auto var(--spacing-sm);
+    background: var(--bg-primary);
+}
+
+.cast-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cast-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+    color: white;
+    font-size: var(--font-size-xxl);
+    font-weight: 600;
+}
+
+.cast-card h4 {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.cast-card p {
+    font-size: var(--font-size-xs);
+    color: var(--text-muted);
+}
+
+/* Crew Grid */
+.crew-grid {
+    display: flex;
+    gap: var(--spacing-xxl);
+}
+
+.crew-item {
+    text-align: left;
+}
+
+.crew-role {
+    font-size: var(--font-size-sm);
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.crew-item h4 {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Similar Movies */
+.similar-movies {
+    display: flex;
+    gap: var(--spacing-lg);
+    overflow-x: auto;
+    padding-bottom: var(--spacing-sm);
+}
+
+.similar-movie-card {
+    flex-shrink: 0;
+    width: 150px;
+}
+
+.similar-movie-card img {
+    width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-sm);
+    transition: transform var(--transition-fast);
+}
+
+.similar-movie-card:hover img {
+    transform: scale(1.02);
+}
+
+.similar-movie-card h4 {
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .movie-hero {
+        padding: var(--spacing-lg) 0;
+        min-height: auto;
+    }
+
+    .movie-hero-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .movie-poster-large img {
+        width: 200px;
+    }
+
+    .movie-info-large h1 {
+        font-size: var(--font-size-xl);
+    }
+
+    .movie-rating-large {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .movie-meta,
+    .movie-details {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .book-tickets-btn {
+        width: 100%;
+    }
+}
